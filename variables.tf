@@ -17,3 +17,8 @@ variable "sa_name" {
   type        = string
   description = "Service Account resource name for reg-suit bucket access in github actions"
 }
+
+variable "sa_email" {
+  type        = string
+  description = "Service Account email for reg-suit bucket access in github actions"
+}
