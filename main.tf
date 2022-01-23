@@ -14,7 +14,7 @@ module "gh_oidc" {
   pool_id     = var.pool_id
   provider_id = var.provider_id
   sa_mapping = {
-    "service-account-for-reg-suit-bucket-access-in-github-actions" = {
+    "${var.sa_email}" = {
       sa_name   = var.sa_name
       attribute = "attribute.repository/mdx-lib/mdx-lib"
     }
