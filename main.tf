@@ -14,7 +14,7 @@ module "gh_oidc" {
   pool_id     = var.pool_id
   provider_id = var.provider_id
   sa_mapping = {
-    var.sa_email = {
+    "${var.sa_email}" = {
       sa_name   = var.sa_name
       attribute = "attribute.repository/mdx-lib/mdx-lib"
     }
